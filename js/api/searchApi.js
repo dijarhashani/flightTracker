@@ -1,4 +1,4 @@
-const AVIATIONSTACK_BASE_URL = "http://api.aviationstack.com/v1";
+const AVIATIONSTACK_BASE_URL = "https://api.aviationstack.com/v1";
 const AVIATIONSTACK_API_KEY = "98a05662aa751bb76e0b42450c8b3ece"; 
 
 async function findAirport(term) {
