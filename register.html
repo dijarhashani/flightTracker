@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval';">
+
+	<title>Register - Flight Tracker</title>
+
+	<link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.4/css/sb-admin-2.min.css" rel="stylesheet">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+	<link href="css/login.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-primary">
+	<div class="container">
+		<div class="row justify-content-center align-items-center min-vh-100">
+			<div class="col-xl-10 col-lg-12 col-md-9">
+				<div class="card o-hidden border-0 shadow-lg my-5">
+					<div class="card-body p-0">
+						<div class="row">
+							<div class="col-lg-6 d-none d-lg-block bg-login-image" style="background-image:url('img/login-bg.jpg'); background-size:cover; background-position:center-left;"></div>
+							<div class="col-lg-6">
+								<div class="p-5">
+									<div class="text-center">
+										<h1 class="h4 text-gray-900 mb-4">
+											<i class="fas fa-plane text-primary"></i> Create Account
+										</h1>
+									</div>
+									<form id="registerForm" class="user">
+										<div class="form-group">
+											<input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Name" required>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control form-control-user" id="surname" name="surname" placeholder="Surname" required>
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" required>
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" required>
+										</div>
+										<div class="form-group">
+											<input type="password" class="form-control form-control-user" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm Password" required>
+										</div>
+										<button type="submit" class="btn btn-primary btn-user btn-block">
+											Create Account
+										</button>
+										<hr>
+									</form>
+									<div class="text-center">
+										<a style="text-decoration: none;" class="small" href="login.html">Already have an account? Login!</a>
+									</div>
+									<div id="errorMsg" class="alert alert-danger mt-3 d-none"></div>
+									<div id="successMsg" class="alert alert-success mt-3 d-none"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/4.1.4/js/sb-admin-2.min.js"></script>
+
+	<script src="js/api/authApi.js"></script>
+
+
+	<script src="js/auth.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* SB Admin 2 Custom Login Styles */
+
+:root {
+	--primary-color: #4e73df;
+	--secondary-color: #858796;
+	--success-color: #1cc88a;
+	--danger-color: #e74c3c;
+	--warning-color: #f6c23e;
+	--info-color: #36b9cc;
+	--light-color: #f8f9fc;
+	--dark-color: #2e3338;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(135deg, var(--primary-color) 0%, #224abe 100%);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+.min-vh-100 {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.bg-gradient-primary {
+	background: linear-gradient(135deg, var(--primary-color) 0%, #224abe 100%);
+	min-height: 100vh;
+}
+
+.card {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-body {
+	padding: 2rem;
+}
+
+.bg-login-image {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><style>.plane{fill:%234e73df;opacity:0.1;}</style></defs><text class="plane" x="50%" y="50%" font-size="200" text-anchor="middle" dominant-baseline="middle">✈️</text></svg>') center/cover;
+	background-color: #f8f9fc;
+}
+
+.form-control-user {
+	border-radius: 10px;
+	font-size: 0.95rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid #dddfeb;
+	transition: border-color 0.3s ease;
+}
+
+.form-control-user:focus {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+	color: #495057;
+}
+
+.btn-user {
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 0.95rem;
+	padding: 0.75rem 1rem;
+	letter-spacing: 0.5px;
+	transition: all 0.3s ease;
+}
+
+.btn-user:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 0.5rem 1.5rem rgba(78, 115, 223, 0.3);
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+	background-color: #224abe;
+	border-color: #224abe;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.text-gray-900 {
+	color: #2e3338;
+	font-weight: 700;
+}
+
+.text-primary {
+	color: var(--primary-color) !important;
+}
+
+.small {
+	color: var(--secondary-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.small:hover {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #e3e6f0;
+	margin: 1.5rem 0;
+}
+
+.custom-control-label {
+	color: var(--secondary-color);
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.alert {
+	border-radius: 10px;
+	border: none;
+	padding: 1rem;
+	font-weight: 500;
+}
+
+.alert-danger {
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.alert-success {
+	background-color: #d4edda;
+	color: #155724;
+}
+
+h1.h4 {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.card-body {
+		padding: 1.5rem;
+	}
+
+	.p-5 {
+		padding: 1rem !important;
+	}
+
+	.bg-login-image {
+		display: none;
+	}
+}
