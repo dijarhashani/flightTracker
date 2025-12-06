@@ -24,9 +24,9 @@ $(document).ready(function () {
         AuthApi.login(email, password,
             function (res) {
                 $success.text("Login successful! Redirecting...").removeClass("d-none");
-                setTimeout(() => {
-                    window.location.href = "index.html";
-                }, 1500);
+                // setTimeout(() => {
+                //     window.location.href = "index.html";
+                // }, 1500);
             },
             function (xhr) {
                 let msg = "Invalid email or password";
