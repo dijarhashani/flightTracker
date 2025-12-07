@@ -12,7 +12,9 @@ $(document).ready(function () {
 
         const $error = $("#errorMsg");
         const $success = $("#successMsg");
+        const $btn = $("#loginBtn");
 
+        
         $error.addClass("d-none");
         $success.addClass("d-none");
 
@@ -21,9 +23,17 @@ $(document).ready(function () {
             return;
         }
 
+        
+        $btn.prop("disabled", true).addClass("disabled");
+        $btn.html(`
+            <span class="spinner-border spinner-border-sm me-2"></span>
+            Logging in...
+        `);
+
         AuthApi.login(email, password,
-            function (res) {
+            function () {
                 $success.text("Login successful! Redirecting...").removeClass("d-none");
+
                 setTimeout(() => {
                     window.location.href = "index.html";
                 }, 1500);
@@ -33,7 +43,12 @@ $(document).ready(function () {
                 if (xhr.responseJSON && xhr.responseJSON.error) {
                     msg = xhr.responseJSON.error;
                 }
+
                 $error.text(msg).removeClass("d-none");
+
+                
+                $btn.prop("disabled", false).removeClass("disabled");
+                $btn.html("Login");
             }
         );
     });
