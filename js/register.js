@@ -1,3 +1,4 @@
+// Begin Dijar
 $(document).ready(function () {
     $("#registerForm").on("submit", function (e) {
         e.preventDefault();
@@ -44,3 +45,4 @@ $(document).ready(function () {
         );
     });
 });
+// End Dijar

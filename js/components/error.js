@@ -1,3 +1,4 @@
+// Begin Benita
 function showAirportError(message) {
     $("#airportError").text(message).removeClass("d-none");
     $("#airportInfo").addClass("d-none");
@@ -7,3 +8,4 @@ function showAirportError(message) {
 function showError(message) {
     showAirportError(message);
 }
+// End Benita

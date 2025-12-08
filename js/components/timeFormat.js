@@ -1,3 +1,4 @@
+// Begin Dijar
 function formatTime(timeStr) {
     if (!timeStr || timeStr === "") return "-";
 
@@ -8,3 +9,4 @@ function formatTime(timeStr) {
 
     return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
+// End Dijar

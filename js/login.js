@@ -1,3 +1,4 @@
+// Begin Dijar
 $(document).ready(function () {
     AuthApi.me(
         () => window.location.href = "index.html",
@@ -53,3 +54,4 @@ $(document).ready(function () {
         );
     });
 });
+// End Dijar

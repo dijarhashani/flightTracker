@@ -1,3 +1,5 @@
+// Begin Dijar
+
 const map = L.map("map").setView([41.3275, 19.8187], 5);
 
 L.tileLayer(
@@ -125,3 +127,4 @@ async function loadMapScreen() {
     await liveUpdate();
     setInterval(liveUpdate, 5000);
 }
+// End Dijar

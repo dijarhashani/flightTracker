@@ -1,3 +1,4 @@
+// Begin Andra
 async function searchFlightByNumber() {
     const flight = $("#bookFlightNumber").val().trim().toUpperCase();
 
@@ -110,3 +111,4 @@ async function confirmBooking() {
         showAlert(data.error || "Booking failed", "danger");
     }
 }
+// End Andra

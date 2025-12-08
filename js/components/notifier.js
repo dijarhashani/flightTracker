@@ -1,3 +1,4 @@
+// Begin Andra
 function showAlert(message, type = "success") {
     $("#alertBox").remove();
 
@@ -16,3 +17,4 @@ function showAlert(message, type = "success") {
         $("#alertBox").alert("close");
     }, 3000);
 }
+// End Andra

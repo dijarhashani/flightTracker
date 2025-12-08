@@ -1,3 +1,4 @@
+// Begin Dijar
 const API_BASE = "https://golang-flight-tracker-backend.onrender.com";
 
 const AuthApi = {
@@ -50,4 +51,5 @@ const AuthApi = {
         console.log("Logged out");
     }
 };
+// End Dijar
 

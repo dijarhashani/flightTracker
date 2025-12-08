@@ -1,3 +1,4 @@
+// Begin Dijar
 const Auth = {
     ensureAuthenticated: function(onAuthenticated) {
         AuthApi.me(function(user) {
@@ -17,3 +18,4 @@ const Auth = {
         });
     }
 };
+// End Dijar

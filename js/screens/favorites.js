@@ -1,3 +1,4 @@
+// Begin Olta
 async function loadFavoriteScreen() {
     $("#favoritesList").empty();
 
@@ -52,3 +53,4 @@ async function loadFavoriteScreen() {
         removeFromFavorites(iata);
     });
 }
+// End Olta

@@ -1,3 +1,4 @@
+// Begin Dalmat
 $(document).ready(function () {
 
     Auth.ensureAuthenticated(function(user) {
@@ -44,3 +45,4 @@ function navigateTo(screen) {
             console.error("Unknown screen:", screen);
     }
 }
+// End Dalmat

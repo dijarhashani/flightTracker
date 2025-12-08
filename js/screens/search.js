@@ -1,3 +1,4 @@
+// Begin Fiona
 let searchInitialized = false;
 
 function showAirportCard(airport) {
@@ -120,3 +121,4 @@ function loadSearchScreen() {
         }
     });
 }
+// End Fiona

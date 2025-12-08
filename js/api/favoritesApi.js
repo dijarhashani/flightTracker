@@ -1,3 +1,4 @@
+// Begin Olta
 async function getFavorites() {
     const res = await fetch("https://golang-flight-tracker-backend.onrender.com/favorites/my-favorites", {
         method: "GET",
@@ -23,3 +24,4 @@ async function removeFromFavorites(iata) {
         showAlert(res.error || "Failed to remove favorite.", "danger");
     }
 }
+// End Olta

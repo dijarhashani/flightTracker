@@ -1,3 +1,4 @@
+// Begin Benita
 function loadMyBookingsScreen() {
     $("#myBookingsList").empty();
 
@@ -47,4 +48,4 @@ function loadMyBookingsScreen() {
 
 
 }
-
+// End Benita

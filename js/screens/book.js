@@ -1,3 +1,4 @@
+// Begin Andra
 let selectedFlight = null;
 
 function selectFlight(flight) {
@@ -23,5 +24,5 @@ function backToStep2() {
     $("#bookStep2").removeClass("d-none");
 }
 
-
+// End Andra
 

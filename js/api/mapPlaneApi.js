@@ -1,3 +1,4 @@
+// Begin Dijar
 async function fetchPlanes() {
     try {
         const res = await fetch("https://golang-flight-tracker-backend.onrender.com/flights");
@@ -62,3 +63,4 @@ async function fetchAirlineName(flightNumber) {
         return "Unknown Airline";
     }
 }
+// End Dijar

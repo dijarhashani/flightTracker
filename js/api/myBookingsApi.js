@@ -1,3 +1,4 @@
+// Begin Benita
 async function GetMyBookings() {
     const res = await fetch("https://golang-flight-tracker-backend.onrender.com/booking/my-bookings", {
         method: "GET",
@@ -19,3 +20,4 @@ async function DeleteBooking(bookingId) {
         showAlert("Failed to delete booking.", "danger");
     }
 }
+// End Benita
